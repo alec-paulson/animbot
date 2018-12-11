@@ -1,16 +1,12 @@
 {
   "currentQuestion": 0,
   "questions": [
-    "Do you have a ECommerce Website",
-    "Do you have a brick and mortar store",
-    "Question3",
-    "Question4",
-    "Question5",
-    "Question6",
-    "Question7",
-    "Question8",
-    "Question9",
-    "Question10",
-    "<img src='http://localhost:3000/image/verifone-p400.png' height='225px' width='150px'/>"
+    "Hello! I can be your guide through the integration process with WorldPay! First question - do you have a e-commerce website?",
+    "Great! Next question, do you have a brick and mortar store?",
+    "Okay great, are you by chance a restaurant or quick serve establishment? Or neither?",
+    "Awesome! Almost there! Would you like to accept mobile payments? (EG ApplePay or GooglePay?)",
+    "Almost there - real quick, what's your email address? (We promise not to sell it)",
+    "Great! Now let's find the perfect terminal for you! Would you like your customers to pay at the table?",
+    "Congratulations! It appears an integration to WorldPay IP combined with the Ingenico Move 5000 will serve your business the best! <img src='http://localhost:3000/image/verifone-p400.png' height='225px' width='150px'/> Click <a href='#'>here</a> to get started in our sandbox!"
   ]
 }
