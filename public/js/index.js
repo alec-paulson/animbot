@@ -32,6 +32,7 @@ $(document).on('click', '.icon_close', function (e) {
 $(document).on('click', '#btn-chat', function(e) {
     $("#chat-panel").append('<div class="row msg_container base_sent">    <div class="col-xs-10 col-md-10">        <div class="messages msg_sent">            <p>' + $('#btn-input').val() + '</p>            <time datetime="2009-11-13T20:00">Timothy • 51 min</time>        </div>    </div>    <div class="col-md-2 col-xs-2 avatar">        <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">    </div></div>');
     $("#btn-input").val('');
+    ajaxCall("http://localhost:3001/Answer", "POST", "{'Answer' : 'Fire in the hole'}")
     //$('#chat-panel').animate({ 
     //    scrollTop: $(document).height()-$(window).height()}, 
     //    1400, 
@@ -39,3 +40,22 @@ $(document).on('click', '#btn-chat', function(e) {
     // );
     $('#chat-panel').animate({scrollTop:$(document).height()}, 'swing');
 });
+
+function ajaxCall(url, method, body){
+    $.ajax
+    ({
+        type: method,
+        url: url,
+        body: body,
+        success: function(html)
+        {
+            $("#chat-panel").append(html);
+            // $("#chat-panel").append('<div class="row msg_container base_sent"><div class="col-xs-10 col-md-10">'+
+            // '<div class="messages msg_sent"><p>' + $('#btn-input').val() + 
+            // '</p><time datetime="2009-11-13T20:00">Timothy • 51 min</time></div></div><div class="col-md-2 col-xs-2 avatar">'+
+            // '<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">'+
+            // '</div></div>');
+        }
+    });
+
+}
