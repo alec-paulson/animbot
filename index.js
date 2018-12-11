@@ -31,6 +31,7 @@ app.use(bodyParser.json())
 
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/Question', (req, res) => res.send(api.getNextQuestion()))
-app.post('/Answer', (req, res) => res.send(api.processAnswer(req.body)))
+//app.post('/Answer', (req, res) => res.send(api.processAnswer(req.body)))
+app.post('/Answer', (req, res) => setTimeout((function() {res.send(api.processAnswer(req.body))}), 1000));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

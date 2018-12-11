@@ -51,6 +51,7 @@ function ajaxCall(url, method, body){
         {
             setBotMessage(html);
             
+            $('#chat-panel').animate({scrollTop:$(document).height()}, 'swing');
         }
     });
 }
