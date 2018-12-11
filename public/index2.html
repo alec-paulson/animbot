@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HTML Last Updated 11/09/2018 by Andrew Harris - This would be a Worldpay ONE static resource uploaded to https://developer.vantiv.com/***
+URL is: *** -->
+
+<head>
+    <!-- TITLE -->
+    <title>Worldpay Landing Page Conversion</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Twitter Social Share -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@worldpaydevs" />
+    <meta name="twitter:creator" content="@worldpaydevs" />
+
+    <!-- Open Graph for Social Share -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://developer.vantiv.com/resources/images/palette-1021/faviconImage-1531702980175-favicon_16x16_wp.ico">
+
+    <!-- SEO -->
+    <meta name="description" content="" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Animate on Scroll (AOS) -->
+    <link rel="stylesheet" href="https://uxdrew.io/aos/aos.css">
+
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/css/mdb.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://developer.vantiv.com/resources/statics/10577/lp.min.css?a=1536354366373" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <!--[if IE 9]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+    <![endif]-->
+
+    <style>
+        @media (max-width: 776px) {
+            .full-page-intro {
+                height: 90vh !important;
+                padding-top: 25px !important;
+            }
+            h1 {
+                font-size: 48px !important
+            }
+        }
+
+
+.icon-bar {
+  position: fixed;
+  top: 95%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2222222;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 16px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/* cool background gradient  */
+.cool {
+	width: 100wh;
+
+	color: #fff;
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+</style>
+
+    <script type="text/javascript">
+        var utag_data = {
+            gua_event_category: "", // gua event category
+            gua_event_label: "", // gua event label
+            gua_event_action: "", // gua event action
+            event_category: "", //
+            event_action: "", //
+            event_label: "" //
+        }
+    </script>
+
+    <!-- Loading script asynchronously -->
+    <script type="text/javascript">
+        (function (a, b, c, d) {
+            a = '//tags.tiqcdn.com/utag/vantiv/vantivone/prod/utag.js';
+            b = document;
+            c = 'script';
+            d = b.createElement(c);
+            d.src = a;
+            d.type = 'text/java' + c;
+            d.async = true;
+            a = b.getElementsByTagName(c)[0];
+            a.parentNode.insertBefore(d, a);
+        })();
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand">
+                <img src="http://uxdrew.io/lp/templates/img/brand_wp_one_red.png" alt="logo" style="width: 150px;">
+            </a>
+
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Developer Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Join</a>
+                    </li> -->
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a target="_blank" href="https://developer.vantiv.com/create-account.jspa?utm_campaign=vantiv-landing-page&utm_medium=button&utm_source=VantivLP&utm_content=header-button"
+                            class="wp-button">Join Now</a>
+                    </li>
+                    <li class="nav-item">
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- Top Navigation -->
+
+
+    <!-- Social Media Icon Floating Buttons -->
+    <div class="icon-bar">
+        <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-text="" data-url=""
+            data-hashtags="" data-via="worldpaydevs" data-related="twitterapi,twitter">
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <!-- Full Page Intro -->
+    <div class="view full-page-intro cool">
+        <img src="http://info.vantiv.com/rs/048-BUR-972/images/dev_icon_rocket_split_positive.svg" class="center" style="width:600px; float: right; opacity: 1;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="container">
+
+                <!--Grid row-->
+                <div class="row wow fadeIn">
+
+                    <!--Grid column Left-->
+                    <div class="col-md-8 mb-4 white-text text-center text-md-left">
+                        <h1 class="display-3 font-weight-bold" data-aos="fade-right" style="font-size: 4.0rem">
+                            Secure Your eCommerce Business
+                        </h1>
+
+                        <hr class="hr-light" data-aos="zoom-in">
+
+                        <p class="py-2 white-text text-muted" style="font-size:16px" data-aos="zoom-in">
+                            Grow and secure your eCommerce business. Find all the Worldpay (Vantiv) technical
+                            documentation needed to integrate your eCommerce business into the future.
+                        </p>
+
+                        <p>
+                            <a target="_blank" href="https://developer.vantiv.com/create-account.jspa?utm_campaign=vantiv-landing-page&utm_medium=button&utm_source=VantivLP&utm_content=carousel-button"
+                                class="wp-button-white" style="margin:5px">Partner Portal Access</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="wp-button-white" style="margin:5px;" data-toggle="modal"
+                                data-target="#exampleModalLong">
+                                Contact Representative
+                            </button>
+                        </p>
+                        <p>
+
+                        </p>
+
+                    </div>
+                    <!--Grid column-->
+
+
+                </div>
+                <!--Grid row-->
+
+            </div>
+            <!-- Content -->
+
+        </div>
+        <!-- Mask & flexbox options-->
+
+    </div>
+    <!-- Full Page Intro -->
+
+
+
+    <!--Main layout-->
+    <main>
+        <div class="container">
+
+
+            <!--Section: A-->
+            <section class="mt-5 wow fadeIn">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                        <img src="https://uxdrew.io/hackathon/thoseGuys.png" width="450px" class="img-fluid z-depth-1-half"
+                            alt="">
+
+                    </div>
+                    <!--Grid column-->
+
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4 pb-3">
+
+                        <!-- Main heading -->
+                        <h3 class="h3 mb-3">Setup a partner meeting with a Worldpay integration expert
+                        </h3>
+                        <p>Ready to integrate? Schedule a discovery meeting with a Worldpay business development
+                            expert. Get immediate answers to all your payment integration questions.
+                        </p>
+                        <ul class="list-display list-checkmarks">
+                            <li>Skip the line and setup an integration checkup</li>
+                            <li>Gather your partner and merchant project timelines</li>
+                            <li>Discuss integration details and features</li>
+                            <li>Navigate hardware, security, systems and referral structures</li>
+                        </ul>
+
+
+                        <!-- CTA -->
+                        <a target="_blank" href="https://developer.vantiv.com/create-account.jspa?utm_campaign=vantiv-landing-page&utm_medium=button&utm_source=VantivLP&utm_content=section-a-button"
+                            class="wp-button-solid">Integrate with Worldpay
+                        </a>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: A-->
+
+            <!-- <hr class="my-5"> -->
+
+        </div>
+
+        <!--CTA-->
+        <footer class="page-footer text-center">
+            <!--Call to action-->
+            <div class="pt-4 py-2 mx-2" data-aos="fade-in">
+                <p class="blockq lighten-1">Talk with a Business Development Expert</p>
+                <button type="button" class="wp-button-white" data-toggle="modal" data-target="#exampleModalLong">
+                    Contact Representative
+                </button>
+            </div>
+            <br>
+            <!--/.Call to action-->
+        </footer>
+        <!--/.CTA-->
+
+        <div class="container-fluid rgba-blue-grey-light" style="background-image: url(''); background-repeat: no-repeat; background-size: cover; background-blend-mode: darken"
+            data-aos="fade-right">
+            <!--Section: Two-->
+            <section class="wow fadeIn">
+                <!--Grid row-->
+                <div class="container">
+                    <div class="row">
+                        <!--Section: Main-->
+                        <section>
+                            <h2 class="my-4 h3 text-center" data-aos="zoom-in">Worldpay ONE: Your eCommerce Integration
+                                Resource</h2>
+                            <!--First row-->
+                            <div class="row features-small mt-4 py-3">
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="http://info.vantiv.com/rs/048-BUR-972/images/dev_icon_ecomm_split_positive.svg"
+                                                class="center" style="width:65px;">
+                                        </div>
+                                        <div class="col-10 mb-2 pl-3">
+                                            <h5 class="feature-title font-bold mb-1">eCommerce Documentation</h5>
+                                            <p class="grey-text mt-2">Get your Worldpay eCommerce integration guides,
+                                                for online, CNP, response codes, testing, certification and
+                                                connectivity. Learn more on how to grow and secure your business.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="http://info.vantiv.com/rs/048-BUR-972/images/dev_icon_handshake_split_positive.svg"
+                                                class="center" style="width:65px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">Partner Payment</h5>
+                                            <p class="grey-text mt-2">Our Developer Integrations team can steer your
+                                                Worldpay integration. Connect with our payment experts.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="http://info.vantiv.com/rs/048-BUR-972/images/dev_icon_terminal_split_positive.svg"
+                                                class="center" style="width:60px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">triPOS</h5>
+                                            <p class="grey-text mt-2">Take your business from average to extraordinary
+                                                with the most robust payment software available today. The future of
+                                                payment processing has arrived.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="http://info.vantiv.com/rs/048-BUR-972/images/dev_icon_api_split_positive.svg"
+                                                class="center" style="width:65px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">ISV Partners</h5>
+                                            <p class="grey-text mt-2">Worldpay technology partners earn more revenue
+                                                and share less residual profit with other parties. Integrate
+                                                traditional Card-Present, CNP, or a combination for your merchants.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="https://uxdrew.io/svg/chart.svg" class="center" style="width:65px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">Financial Institutions</h5>
+                                            <p class="grey-text mt-2">Best-in-class payments solutions across any mode
+                                                of commerce that future proof you and your cardholders. Improve the
+                                                state of your non-interest Income across your entire Financial
+                                                Institution.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="https://uxdrew.io/svg/integration.svg" class="center" style="width:60px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">Integrated Payments </h5>
+                                            <p class="grey-text mt-2">Supports a complete set of integration
+                                                capabilities for all types of solutions and card entry devices (CED)
+                                                for POS systems, standalone terminals, eCommerce and Mobile offerings.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="https://uxdrew.io/svg/computer.svg" class="center" style="width:60px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">Online Payments</h5>
+                                            <p class="grey-text mt-2">Delve into our certification guides and to move
+                                                your development from certification through to processing payments for
+                                                your merchants. Sign up below for full access.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-xl-4 col-lg-6">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-2 px-2" data-aos="fade-up">
+                                            <img src="https://uxdrew.io/svg/credit_emv.svg" class="center" style="width:60px;">
+                                        </div>
+                                        <div class="col-10 mb-2">
+                                            <h5 class="feature-title font-bold mb-1">Payment Processing</h5>
+                                            <p class="grey-text mt-2">Delve into our certification guides and to move
+                                                your development from certification through to processing payments for
+                                                your merchants. Sign up below for full access.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--/Grid row-->
+                                </div>
+                                <!--/Grid column-->
+
+                            </div>
+                            <!--/Second row-->
+
+                        </section>
+                        <!--Section: More-->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        </section>
+
+    </main>
+    <!--Main layout-->
+
+    <!--CTA-->
+    <footer class="page-footer text-center">
+        <!--Call to action-->
+        <div class="pt-4 py-2 mx-2" data-aos="fade-in">
+            <p class="blockq lighten-1">Become a partner & unleash the power of Worldpay payments for your merchants!</p>
+            <a class="wp-button-white" href="https://developer.vantiv.com/create-account.jspa?utm_campaign=vantiv-landing-page&utm_medium=button&utm_source=VantivLP&utm_content=final-cta-button"
+                id="backToTop" role="button">Integrate with Worldpay!
+            </a>
+        </div>
+        <br>
+        <!--/.Call to action-->
+    </footer>
+    <!--/.CTA-->
+
+
+    <!--Copyright-->
+    <div class="footer-copyright text-center fadeIn-text p-3 black-text" style="background-color: #727887">
+        <p class="small-text"> <a href="https://www.vantiv.com/privacy-policy" target="_blank" class="white-text text-muted">Privacy
+                & Legal</a></p>
+        <p class="small-text">© 2018 Worldpay, LLC and/or its affiliates. All rights reserved. Worldpay, the logo
+            and
+            any associated brand names are trademarks or registered trademarks of Worldpay, LLC and/or its
+            affiliates
+            in the US, UK or other countries. All other trademarks are the property of their respective owners.</p>
+    </div>
+    <!--/.Copyright-->
+
+    <!-- Many Scripts -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin=" anonymous"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/js/mdb.min.js"></script>
+
+    <script src="https://uxdrew.io/aos/aos.js"></script>
+
+    <!--[if gte IE 9]><!-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if IE 9]><!-->
+    <script src="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/js/bootstrap-ie9.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/js/bootstrap-ie8.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.js"></script>
+    <!--<![endif]-->
+
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+            once: true,
+        });
+    </script>
+
+    <script type="text/javascript">
+        function Quiz(questions) {
+            this.score = 0;
+            this.questions = questions;
+            this.currentQuestionIndex = 0;
+        }
+
+        Quiz.prototype.guess = function (answer) {
+            if (this.getCurrentQuestion().isCorrectAnswer(answer)) {
+                this.score++;
+            }
+            this.currentQuestionIndex++;
+        };
+
+        Quiz.prototype.getCurrentQuestion = function () {
+            return this.questions[this.currentQuestionIndex];
+        };
+
+        Quiz.prototype.hasEnded = function () {
+            return this.currentQuestionIndex >= this.questions.length;
+        };
+
+        function Question(text, choices, answer) {
+            this.text = text;
+            this.choices = choices;
+            this.answer = answer;
+        }
+
+        Question.prototype.isCorrectAnswer = function (choice) {
+            return this.answer === choice;
+        };
+        var QuizUI = {
+            displayNext: function () {
+                if (quiz.hasEnded()) {
+                    this.displayScore();
+                } else {
+                    this.displayQuestion();
+                    this.displayChoices();
+                    this.displayProgress();
+                }
+            },
+            displayQuestion: function () {
+                this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
+            },
+            displayChoices: function () {
+                var choices = quiz.getCurrentQuestion().choices;
+
+                for (var i = 0; i < choices.length; i++) {
+                    this.populateIdWithHTML("choice" + i, choices[i]);
+                    this.guessHandler("guess" + i, choices[i]);
+                }
+            },
+            displayScore: function () {
+                var gameOverHTML = "<h1></h1>";
+                gameOverHTML += "<h2> Your score is: " + quiz.score + "</h2>";
+
+                this.populateIdWithHTML("quiz", gameOverHTML);
+            },
+
+            populateIdWithHTML: function (id, text) {
+                var element = document.getElementById(id);
+                element.innerHTML = text;
+            },
+            guessHandler: function (id, guess) {
+                var button = document.getElementById(id);
+                button.onclick = function () {
+                    quiz.guess(guess);
+                    QuizUI.displayNext();
+                };
+
+            },
+            displayProgress: function () {
+                var currentQuestionNumber = quiz.currentQuestionIndex + 1;
+                this.populateIdWithHTML(
+                    "progress",
+                    "Question " + currentQuestionNumber + " of " + quiz.questions.length
+                );
+            }
+        };
+
+        //Create Questions
+        var questions = [
+            new Question(
+                "What is 2+2",
+                [
+                    "2",
+                    "12",
+                    "4",
+                    "IDK"
+                ],
+                "4"
+            ),
+            new Question(
+                "It is cool to have an 'EMV Coming Soon' cardboard stuck in your reader?",
+                [
+                    "Heck no",
+                    "Um yeah",
+                    "IDK",
+                    "What is EMV"
+                ],
+                "Heck no"
+            ),
+            new Question(
+                "I need to hire a developer to integrated to Worldpay?",
+                [
+                    "Yes",
+                    "No",
+                    "Maybe",
+                    "IDK"
+                ],
+                "Yes"
+            ),
+            new Question(
+                "Question 4",
+                [
+                    "A",
+                    "B",
+                    "C",
+                    "D"
+                ],
+                "B"
+            )
+        ];
+
+        //Create Quiz
+        var quiz = new Quiz(questions);
+
+        //Display Quiz
+        QuizUI.displayNext();
+    </script>
+
+    <script type="text/javascript">
+        $("#buttonTop").on("click", function () {
+            $("body").scrollTop(0);
+        });
+    </script>
+
+    <!-- block those free emails -->
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('#btnSubmit').click(function () {
+                var email = $('#Email').val();
+                var reg =
+                    /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+                if (reg.test(email)) {
+                    return 0;
+                } else {
+                    alert('Please enter your business email address');
+                    return false;
+                }
+            });
+        });
+    </script>
+
+    <!-- utm tracking field script -->
+    <script>
+        window.onload = function () {
+            console.log('window firing');
+            var currentUrl = document.referrer;
+            var iframeUrl = window.location.href;
+
+            console.log("This is the iframe parent " + currentUrl);
+            console.log("This is the iframe address " + iframeUrl);
+
+            document.getElementById('00NC0000004pg1u').value = iframeUrl;
+            console.log(document.getElementById('00NC0000004pg1u').value);
+        };
+    </script>
+    <!-- end tracking field -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:#555" id="exampleModalLongTitle">Talk with a Business
+                        Development Expert</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form -->
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"
+                        onsubmit="return isFormValid()">
+
+                        <div class="md-form">
+                            <input type="hidden" name="oid" value="00DC0000000Pc9J">
+                        </div>
+
+                        <!-- track url -->
+                        <input type="hidden" name="00NC0000004pg1u" id="00NC0000004pg1u" value="">
+                        <!-- end track url -->
+
+                        <div class="md-form">
+                            <input type="hidden" name="retURL" value="http://127.0.0.1:5500/WorldpayONE/Custom%20Pages/SEM/wp-leads.html">
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="first_name" maxlength="40" name="first_name" size="20" data-length="20"
+                                class="form-control validate" required>
+                            <label for="first_name" data-error="wrong" data-success="">First</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="last_name" maxlength="80" name="last_name" size="20" class="form-control validate"
+                                required>
+                            <label for="last_name" data-error="wrong" data-success="">Last</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="company" maxlength="40" name="company" size="20" class="form-control validate"
+                                required>
+                            <label for="company" data-error="wrong" data-success="">Organization</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="URL" maxlength="20" name="URL" size="20" class="form-control validate"
+                                required>
+                            <label for="URL" data-error="wrong" data-success="">Website</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="email" id="Email" maxlength="80" name="email" size="20" class="form-control validate"
+                                required>
+                            <label for="email" data-error="wrong" data-success="">Email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="tel" id="phone" maxlength="40" name="phone" size="20" class="form-control validate"
+                                required>
+                            <label for="form6" data-error="wrong" data-success="">Phone</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="hidden" name="lead_source" id="LeadSource" value="VantivOneDev">
+                        </div>
+
+                        <div class="md-form">
+                            <input type="hidden" name="recordType" id="recordType" value="012C0000000Uk20">
+                        </div>
+
+                        <div class="md-form">
+                            <input type="hidden" name="Campaign_ID" value="701C0000000sw01" />
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" id="btnSubmit" name="submit" value="Submit" class="wp-button-solid"
+                                onclick="ga( 'send', 'event', 'lead_form', 'click', 'Salesforce Lead');">
+                        </div>
+
+                    </form>
+                    <!-- Form -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
