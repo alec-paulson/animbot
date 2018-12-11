@@ -1,0 +1,47 @@
+{
+    "data":[
+        {
+            "Id" : 1,
+            "Question": "How do you sell your product?",
+            "Answers": [
+                {
+                    "Text": "Brick And Mortar", 
+                    "Next" : 2 
+                },
+                {
+                    "Text": "ECommerce", 
+                    "Next" : 3 
+                },
+                {
+                    "Text": "Phone", 
+                    "Next" : 2
+                }]
+        },
+        {
+            "Id" : 2,
+            "Question": "Do you have a website?",
+            "Answers": [
+                {
+                    "Text": "Yes", 
+                    "Next" : 3 
+                },
+                {
+                    "Text": "No", 
+                    "Next" : 3 
+                }]
+        },
+        {
+            "Id" : 3,
+            "Question": "Do you have a POS?",
+            "Answers": [
+                {
+                    "Text": "Yes", 
+                    "Next" : 4 
+                },
+                {
+                    "Text": "No", 
+                    "Next" : 4 
+                }]
+        },
+    ]
+}

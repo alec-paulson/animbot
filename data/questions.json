@@ -1,0 +1,16 @@
+{
+  "currentQuestion": 1,
+  "questions": [
+    "Do you have a ECommerce Website",
+    "Do you have a brick and mortar store",
+    "Question3",
+    "Question4",
+    "Question5",
+    "Question6",
+    "Question7",
+    "Question8",
+    "Question9",
+    "Question10",
+    "<img src='http://localhost:3000/image/verifone-p400.png' height='225px' width='150px'/>"
+  ]
+}
