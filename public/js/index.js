@@ -30,12 +30,7 @@ $(document).on('click', '.icon_close', function (e) {
     $( "#chat_window_1" ).remove();
 });
 $(document).on('click', '#btn-chat', function(e) {
-    $("#chat-panel").append('<div class="row msg_container base_sent">    <div class="col-xs-10 col-md-10">        <div class="messages msg_sent">            <p>' + $('#btn-input').val() + '</p>            <time datetime="2009-11-13T20:00">Timothy • 51 min</time>        </div>    </div>    <div class="col-md-2 col-xs-2 avatar">        <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">    </div></div>');
+    $("#chat-panel").append('<div class="row msg_container base_sent">    <div class="col-xs-10 col-md-10">        <div class="messages msg_sent">            <p>' + $('#btn-input').val() + '</p>            <time datetime="2009-11-13T20:00">Arjun • 51 min</time>        </div>    </div>    <div class="col-md-2 col-xs-2 avatar">        <img src="images/lead.jpg" class=" img-responsive ">    </div></div>');
     $("#btn-input").val('');
-    //$('#chat-panel').animate({ 
-    //    scrollTop: $(document).height()-$(window).height()}, 
-    //    1400, 
-    //    "swing"
-    // );
     $('#chat-panel').animate({scrollTop:$(document).height()}, 'swing');
 });
