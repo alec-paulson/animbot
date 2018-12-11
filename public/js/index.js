@@ -32,15 +32,12 @@ $(document).on('click', '.icon_close', function (e) {
 $(document).on('click', '#btn-chat', function(e) {
     $("#chat-panel").append('<div class="row msg_container base_sent">    <div class="col-xs-10 col-md-10">        <div class="messages msg_sent">            <p>' + $('#btn-input').val() + '</p>            <time datetime="2009-11-13T20:00">Arjun</time>        </div>    </div>    <div class="col-md-2 col-xs-2 avatar">        <img src="images/lead.jpg" class=" img-responsive ">    </div></div>');
     $("#btn-input").val('');
-<<<<<<< HEAD
     ajaxCall("http://localhost:3001/Answer", "POST", "{'Answer' : 'Fire in the hole'}")
     //$('#chat-panel').animate({ 
     //    scrollTop: $(document).height()-$(window).height()}, 
     //    1400, 
     //    "swing"
     // );
-=======
->>>>>>> 184e86a331dbe659473e524d9bd65d750051c2de
     $('#chat-panel').animate({scrollTop:$(document).height()}, 'swing');
 });
 
@@ -52,13 +49,26 @@ function ajaxCall(url, method, body){
         body: body,
         success: function(html)
         {
-            $("#chat-panel").append(html);
-            // $("#chat-panel").append('<div class="row msg_container base_sent"><div class="col-xs-10 col-md-10">'+
-            // '<div class="messages msg_sent"><p>' + $('#btn-input').val() + 
-            // '</p><time datetime="2009-11-13T20:00">Timothy • 51 min</time></div></div><div class="col-md-2 col-xs-2 avatar">'+
-            // '<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">'+
-            // '</div></div>');
+            setBotMessage(html);
+            
         }
     });
+}
 
+function setBotMessage(html){
+    $("#chat-panel").remove(".typing-indicator");
+    $("#chat-panel").append(
+        '<div class="panel-body msg_container_base" id="chat-panel">'+
+                    '<div class="row msg_container base_receive">'+
+                        '<div class="col-md-2 col-xs-2 avatar">'+
+                            '<img src="images/wpsquarelogo.png" class=" img-responsive ">'+
+                        '</div>'+
+                        '<div class="col-md-10 col-xs-10">'+
+                            '<div class="messages msg_receive">'+
+                                '<p>' + html + '</p>'+
+                                '<time datetime="2009-11-13T20:00">Animbot</time>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>');
 }
