@@ -1,7 +1,7 @@
 {
-  "currentQuestion": 5,
+  "currentQuestion": 1,
   "questions": [
-    "Hello! I can be your guide through the integration process with WorldPay! First question - do you have a e-commerce website?",
+    "Hello! First question - do you have a e-commerce website?",
     "Great! Next question, do you have a brick and mortar store?",
     "Okay great, are you by chance a restaurant or quick serve establishment? Or neither?",
     "Awesome! Almost there! Would you like to accept mobile payments? (EG ApplePay or GooglePay?)",

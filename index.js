@@ -29,6 +29,8 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json())
 
+api.resetQuestion();
+
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/Question', (req, res) => res.send(api.getNextQuestion()))
 //app.post('/Answer', (req, res) => res.send(api.processAnswer(req.body)))
