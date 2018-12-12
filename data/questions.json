@@ -1,5 +1,5 @@
 {
-  "currentQuestion": 1,
+  "currentQuestion": 0,
   "questions": [
     "Hello! First question - do you have a e-commerce website?",
     "Great! Next question, do you have a brick and mortar store?",
@@ -7,6 +7,6 @@
     "Awesome! Almost there! Would you like to accept mobile payments? (EG ApplePay or GooglePay?)",
     "Almost there - real quick, what's your email address? (We promise not to sell it)",
     "Great! Now let's find the perfect terminal for you! Would you like your customers to pay at the table?",
-    "Congratulations! It appears an integration to WorldPay IP combined with the Ingenico Move 5000 will serve your business the best! <img src='http://localhost:3000/image/verifone-p400.png' height='225px' width='150px'/> Click <a href='#'>here</a> to get started in our sandbox!"
+    "Congratulations! It appears an integration to WorldPay IP combined with the Ingenico Move 5000 will serve your business the best! <img src='http://localhost:3000/images/p400.png' height='225px' width='150px'/> Click <a href='#'>here</a> to get started in our sandbox!"
   ]
 }
