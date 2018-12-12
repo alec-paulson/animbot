@@ -1,0 +1,62 @@
+
+  <!-- Form -->
+                  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                    method="POST" onsubmit="return isFormValid()">
+                    <!-- Heading -->
+                    <h3 class="dark-grey-text text-center">
+                      <strong></strong>
+                    </h3>
+                    <div class="md-form">
+                      <input type="hidden" name="oid" value="00DC0000000Pc9J">
+                    </div>
+                    <!-- track url -->
+                    <input type="hidden" name="00NC0000004pg1u" id="00NC0000004pg1u" value="">
+                    <!-- end track url -->
+                    <div class="md-form">
+                      <input type="hidden" name="retURL" value="https://developer.vantiv.com/resources/statics/7241/payment-integrations-partner-journey-infographic-thank-you.html">
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="first_name" maxlength="40" name="first_name" size="20"
+                        data-length="20" class="form-control validate" required>
+                      <label for="first_name" data-error="wrong" data-success="">First</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="last_name" maxlength="80" name="last_name" size="20"
+                        class="form-control validate" required>
+                      <label for="last_name" data-error="wrong" data-success="">Last</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="company" maxlength="40" name="company" size="20"
+                        class="form-control validate" required>
+                      <label for="company" data-error="wrong" data-success="">Organization</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="URL" maxlength="20" name="URL" size="20" class="form-control validate"
+                        required>
+                      <label for="URL" data-error="wrong" data-success="">Website</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="email" id="Email" maxlength="80" name="email" size="20" class="form-control validate"
+                        required>
+                      <label for="email" data-error="wrong" data-success="">Email</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="tel" id="phone" maxlength="40" name="phone" size="20" class="form-control validate"
+                        required>
+                      <label for="form6" data-error="wrong" data-success="">Phone</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="hidden" name="lead_source" id="LeadSource" value="VantivOneDev">
+                    </div>
+                    <div class="md-form">
+                      <input type="hidden" name="recordType" id="recordType" value="012C0000000Uk20">
+                    </div>
+                    <div class="md-form">
+                      <input type="hidden" name="Campaign_ID" value="701C0000000tF4q" />
+                    </div>
+                    <div class="text-center">
+                      <input type="submit" id="btnSubmit" name="submit" value="Download The Whitepaper" class="wp-button-solid"
+                        onclick="ga( 'send', 'event', 'lead_form', 'click', 'Salesforce Lead');">
+                    </div>
+                  </form>
+                  <!-- Form -->
