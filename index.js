@@ -29,6 +29,8 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json())
 
+api.resetQuestion();
+
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/SalesForce', (req, res) => res.sendFile(__dirname +'/public/salesForceLeadForm.html'))
 app.get('/Question', (req, res) => res.send(api.getNextQuestion()))
